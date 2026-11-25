@@ -1,0 +1,307 @@
+/* ================================
+   STYLE WEBSITE SMKN 2 CIPATUJAH
+   TEMA BIRU
+================================ */
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8ff;
+    color: #1f2937;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+    background: linear-gradient(90deg, #005bea, #00c6fb) !important;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    margin-left: 8px;
+    border-radius: 8px;
+    padding: 8px 14px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar .nav-link.active {
+    background-color: white;
+    color: #005bea !important;
+    font-weight: bold;
+}
+
+
+/* ================================
+   HERO HOME
+================================ */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 70, 160, 0.75),
+            rgba(0, 160, 220, 0.65)
+        ),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0bV2c8PafNLa66-eS3m9dFybkl0ECIzmgSayzz8NyYjSjLYmhoC3fXCIv&s=10");
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 55px;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+
+/* TOMBOL HERO */
+
+.hero .btn {
+    border: none;
+    border-radius: 30px;
+    padding: 12px 28px;
+    color: #005bea;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================================
+   HEADER PROFILE & GALERI
+================================ */
+
+.page-header {
+    padding: 110px 0;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 70, 160, 0.8),
+            rgba(0, 160, 220, 0.7)
+        ),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0bV2c8PafNLa66-eS3m9dFybkl0ECIzmgSayzz8NyYjSjLYmhoC3fXCIv&s=10");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.page-header h1 {
+    font-size: 45px;
+}
+
+
+/* ================================
+   JUDUL SECTION
+================================ */
+
+section h2 {
+    color: #005bea;
+}
+
+section h3 {
+    color: #006dcc;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+
+    background-color: white;
+
+    box-shadow: 0 5px 18px rgba(0, 91, 234, 0.12);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 25px rgba(0, 91, 234, 0.2);
+}
+
+.card-title {
+    color: #005bea;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #5b6470;
+}
+
+
+/* ================================
+   TOMBOL
+================================ */
+
+.btn-primary {
+    background-color: #005bea;
+    border-color: #005bea;
+}
+
+.btn-primary:hover {
+    background-color: #0046b8;
+    border-color: #0046b8;
+}
+
+
+/* ================================
+   GALERI
+================================ */
+
+.gallery-img {
+    height: 230px;
+    width: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.card:hover .gallery-img {
+    transform: scale(1.03);
+}
+
+
+/* ================================
+   TABLE PROFILE
+================================ */
+
+.table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #005bea;
+    color: white;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: linear-gradient(
+        90deg,
+        #0046b8,
+        #005bea,
+        #00a8e8
+    ) !important;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+
+/* ================================
+   BACKGROUND SECTION
+================================ */
+
+.bg-light {
+    background-color: #eef6ff !important;
+}
+
+
+/* ================================
+   RESPONSIVE HP
+================================ */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 450px;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .page-header {
+        padding: 80px 20px;
+    }
+
+    .page-header h1 {
+        font-size: 34px;
+    }
+
+    .gallery-img {
+        height: 210px;
+    }
+
+    .navbar .nav-link {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+
+/* ================================
+   HP KECIL
+================================ */
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        min-height: 420px;
+    }
+
+    .page-header h1 {
+        font-size: 29px;
+    }
+
+    .gallery-img {
+        height: 200px;
+    }
+
+}
